@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbre de Talents</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Arbre de Talents</h1>
+    <label for="points-input">Points disponibles :</label>
+    <input type="number" id="points-input" value="10">
+
+    <div class="talent-tree">
+
+        <!-- Branche Soins -->
+        <div class="branch">
+            <div class="talent-node" id="talent1">
+                <span>Petit Soin</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="3" value="0">
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent1.1">
+                <span>Moyen Soin</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="6" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent1.2">
+                <span>Grand Soin</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="9" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent1.3">
+                <span>Soin Suprême</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="12" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent1.4">
+                <span>Soin Céleste</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="15" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+        </div>
+
+        <!-- Branche Magie -->
+        <div class="branch">
+            <div class="talent-node" id="talent2">
+                <span>Petit Sort</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="3" value="0">
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent2.1">
+                <span>Moyen Sort</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="6" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent2.2">
+                <span>Grand Sort</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="9" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent2.3">
+                <span>Sort Suprême</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="12" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent2.4">
+                <span>Sort Céleste</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="15" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+        </div>
+
+        <!-- Branche Attaque -->
+        <div class="branch">
+            <div class="talent-node" id="talent3">
+                <span>Petite Attaque</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="3" value="0">
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent3.1">
+                <span>Moyenne Attaque</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="6" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent3.2">
+                <span>Grande Attaque</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="9" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent3.3">
+                <span>Attaque Suprême</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="12" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+            <div class="line"></div>
+            <div class="talent-node locked" id="talent3.4">
+                <span>Attaque Céleste</span>
+                <div class="progress-bar"><div class="progress"></div></div>
+                <input type="number" class="point-input" max="15" value="0" disabled>
+                <span class="lock"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
